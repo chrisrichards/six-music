@@ -8,10 +8,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View {    
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        VStack {
+            TrackView()
+            Spacer()
+            TransportControlsView()
+            Spacer()
+            VolumeControlView()
+        }.padding()
     }
 }
 

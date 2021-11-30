@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,17 @@
 		A1266D96249D5B8600169CEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1266D95249D5B8600169CEF /* Assets.xcassets */; };
 		A1266D99249D5B8600169CEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1266D98249D5B8600169CEF /* Preview Assets.xcassets */; };
 		A1266D9C249D5B8600169CEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1266D9A249D5B8600169CEF /* Main.storyboard */; };
+		A1266DA5249D62B500169CEF /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1266DA4249D62B500169CEF /* TrackView.swift */; };
+		A1266DA7249D636000169CEF /* TransportControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1266DA6249D636000169CEF /* TransportControlsView.swift */; };
+		A1266DA9249D63D100169CEF /* VolumeControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1266DA8249D63D100169CEF /* VolumeControlView.swift */; };
+		A1D4E9DC275663C90076D49E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D4E9DB275663C90076D49E /* Player.swift */; };
+		A1D9263825E452AB00C347BF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D9263725E452AB00C347BF /* Request.swift */; };
+		A1D9263B25E4545600C347BF /* BbcRadioAndMusicServicesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D9263A25E4545600C347BF /* BbcRadioAndMusicServicesApi.swift */; };
+		A1D9264125E4583500C347BF /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D9264025E4583500C347BF /* HttpMethod.swift */; };
+		A1D9264525E4586F00C347BF /* RequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D9264425E4586F00C347BF /* RequestExtensions.swift */; };
+		A1D9264825E4589D00C347BF /* URLSessionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D9264725E4589D00C347BF /* URLSessionExtensions.swift */; };
+		A1D9264C25E51E6A00C347BF /* NowPlayingDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D9264B25E51E6A00C347BF /* NowPlayingDataStore.swift */; };
+		A1D9265925E531AD00C347BF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A1D9265825E531AD00C347BF /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +34,16 @@
 		A1266D9B249D5B8600169CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1266D9D249D5B8600169CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1266D9E249D5B8600169CEF /* sixmusic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sixmusic.entitlements; sourceTree = "<group>"; };
+		A1266DA4249D62B500169CEF /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
+		A1266DA6249D636000169CEF /* TransportControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportControlsView.swift; sourceTree = "<group>"; };
+		A1266DA8249D63D100169CEF /* VolumeControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeControlView.swift; sourceTree = "<group>"; };
+		A1D4E9DB275663C90076D49E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A1D9263725E452AB00C347BF /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		A1D9263A25E4545600C347BF /* BbcRadioAndMusicServicesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BbcRadioAndMusicServicesApi.swift; sourceTree = "<group>"; };
+		A1D9264025E4583500C347BF /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		A1D9264425E4586F00C347BF /* RequestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExtensions.swift; sourceTree = "<group>"; };
+		A1D9264725E4589D00C347BF /* URLSessionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtensions.swift; sourceTree = "<group>"; };
+		A1D9264B25E51E6A00C347BF /* NowPlayingDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingDataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D9265925E531AD00C347BF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +77,7 @@
 		A1266D90249D5B8500169CEF /* sixmusic */ = {
 			isa = PBXGroup;
 			children = (
+				A1D9263F25E4581200C347BF /* Networking */,
 				A1266D91249D5B8500169CEF /* AppDelegate.swift */,
 				A1266D93249D5B8500169CEF /* ContentView.swift */,
 				A1266D95249D5B8600169CEF /* Assets.xcassets */,
@@ -62,6 +85,11 @@
 				A1266D9D249D5B8600169CEF /* Info.plist */,
 				A1266D9E249D5B8600169CEF /* sixmusic.entitlements */,
 				A1266D97249D5B8600169CEF /* Preview Content */,
+				A1266DA4249D62B500169CEF /* TrackView.swift */,
+				A1266DA6249D636000169CEF /* TransportControlsView.swift */,
+				A1266DA8249D63D100169CEF /* VolumeControlView.swift */,
+				A1D9264B25E51E6A00C347BF /* NowPlayingDataStore.swift */,
+				A1D4E9DB275663C90076D49E /* Player.swift */,
 			);
 			path = sixmusic;
 			sourceTree = "<group>";
@@ -72,6 +100,18 @@
 				A1266D98249D5B8600169CEF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1D9263F25E4581200C347BF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A1D9263A25E4545600C347BF /* BbcRadioAndMusicServicesApi.swift */,
+				A1D9263725E452AB00C347BF /* Request.swift */,
+				A1D9264025E4583500C347BF /* HttpMethod.swift */,
+				A1D9264425E4586F00C347BF /* RequestExtensions.swift */,
+				A1D9264725E4589D00C347BF /* URLSessionExtensions.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +130,9 @@
 			dependencies = (
 			);
 			name = sixmusic;
+			packageProductDependencies = (
+				A1D9265825E531AD00C347BF /* Kingfisher */,
+			);
 			productName = sixmusic;
 			productReference = A1266D8E249D5B8500169CEF /* sixmusic.app */;
 			productType = "com.apple.product-type.application";
@@ -101,7 +144,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Yellow Feather Ltd";
 				TargetAttributes = {
 					A1266D8D249D5B8500169CEF = {
@@ -118,6 +161,9 @@
 				Base,
 			);
 			mainGroup = A1266D85249D5B8500169CEF;
+			packageReferences = (
+				A1D9265725E531AD00C347BF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = A1266D8F249D5B8500169CEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,8 +191,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1266DA7249D636000169CEF /* TransportControlsView.swift in Sources */,
+				A1D9263825E452AB00C347BF /* Request.swift in Sources */,
+				A1D9264825E4589D00C347BF /* URLSessionExtensions.swift in Sources */,
+				A1D9264525E4586F00C347BF /* RequestExtensions.swift in Sources */,
+				A1D4E9DC275663C90076D49E /* Player.swift in Sources */,
 				A1266D94249D5B8500169CEF /* ContentView.swift in Sources */,
+				A1D9263B25E4545600C347BF /* BbcRadioAndMusicServicesApi.swift in Sources */,
+				A1D9264125E4583500C347BF /* HttpMethod.swift in Sources */,
+				A1266DA5249D62B500169CEF /* TrackView.swift in Sources */,
+				A1D9264C25E51E6A00C347BF /* NowPlayingDataStore.swift in Sources */,
 				A1266D92249D5B8500169CEF /* AppDelegate.swift in Sources */,
+				A1266DA9249D63D100169CEF /* VolumeControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +246,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -250,6 +307,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -282,6 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = sixmusic/sixmusic.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"sixmusic/Preview Content\"";
@@ -293,7 +352,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yellowfeather.sixmusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -305,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = sixmusic/sixmusic.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"sixmusic/Preview Content\"";
@@ -316,7 +376,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yellowfeather.sixmusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -345,6 +405,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1D9265725E531AD00C347BF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1D9265825E531AD00C347BF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1D9265725E531AD00C347BF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1266D86249D5B8500169CEF /* Project object */;
 }
