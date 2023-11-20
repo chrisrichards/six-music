@@ -9,10 +9,16 @@
 import Combine
 import Foundation
 
-struct NowPlaying {
+struct NowPlaying: Equatable {
     let artist: String
     let track: String
     let imageUrl: URL!
+    
+    static func == (lhs: NowPlaying, rhs: NowPlaying) -> Bool {
+        return lhs.artist == rhs.artist &&
+            lhs.track == rhs.track &&
+            lhs.imageUrl == rhs.imageUrl
+    }
 }
 
 final class NowPlayingDataStore: ObservableObject {
@@ -23,7 +29,7 @@ final class NowPlayingDataStore: ObservableObject {
     init() {
         refreshNowPlaying()
         
-        Timer.publish(every: 10, on: .main, in: .common)
+        Timer.publish(every: 30, on: .main, in: .common)
             .autoconnect()
             .sink { [unowned self] _ in
                 self.refreshNowPlaying()
@@ -38,10 +44,16 @@ final class NowPlayingDataStore: ObservableObject {
             .map(\.data)
             .replaceError(with: [])
             .prefix(1)
+            .filter { segments in
+                return segments.count > 0
+            }
             .map { segments in
                 let segment = segments.first!
                 let imageUrl = segment.image_url.replacingOccurrences(of: "{recipe}", with: "320x320")
                 return NowPlaying(artist: segment.titles.primary, track: segment.titles.secondary, imageUrl: URL(string: imageUrl))
+            }
+            .filter { newNowPlaying in
+                return newNowPlaying != self.nowPlaying
             }
             .assign(to: \.nowPlaying, on: self)
             .store(in: &cancellables)
